@@ -40,3 +40,9 @@
 // const arr = matrics.flat(2);
 // console.log(arr);
 
+// 36
+// const numbers = [5, 3, 6, 90, 0];
+// const result = numbers.filter(num => !(num % 2)).map(num => num * 2).reduce((acc, current) => acc + current, 0);
+// console.log(result);
+
+// 38
