@@ -46,3 +46,12 @@
 // console.log(result);
 
 // 38
+const types = [{ type: "fruit" }, { type: "veg" }, { type: "fruit" }];
+const groups = types.reduce((acc, current) => {
+    if (current.type in acc)
+        acc[current.type].push(current);
+    else
+        acc[current.type] = [current];
+    return acc;
+}, {});
+// console.log(groups);
