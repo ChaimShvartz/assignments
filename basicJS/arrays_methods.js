@@ -29,3 +29,10 @@
 // const numbers = [8, -6, 16, -2, 0];
 // const sortedNumbers = numbers.sort((left, right) => right - left);
 // console.log(sortedNumbers);
+
+// 29
+// const arr = [5, 2, 7, 0];
+// arr.splice(1, 2);
+// console.log(arr);
+
+// 32
