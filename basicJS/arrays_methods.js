@@ -67,3 +67,15 @@ const hasDoubles = (arr) => {
     return false;
 };
 // console.log(hasDoubles(arr));
+
+// 41
+const products = [
+  { name: "Laptop", price: 800, inStock: true,  category: "tech"    },
+  { name: "Phone",  price: 400, inStock: false, category: "tech"    },
+  { name: "Shirt",  price: 50,  inStock: true,  category: "fashion" },
+  { name: "Laptop", price: 800, inStock: true,  category: "tech"    },
+  { name: "Phone",  price: 400, inStock: true, category: "tech"    },
+  { name: "Shirt",  price: 50,  inStock: true,  category: "fashion" }
+];
+const items = products.filter(item => item.inStock && item.price > 100).sort((a, b) => b - a).map(item => item.name).join(', ');
+console.log(items);
