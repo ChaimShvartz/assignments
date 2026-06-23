@@ -46,12 +46,24 @@
 // console.log(result);
 
 // 38
-const types = [{ type: "fruit" }, { type: "veg" }, { type: "fruit" }];
-const groups = types.reduce((acc, current) => {
-    if (current.type in acc)
-        acc[current.type].push(current);
-    else
-        acc[current.type] = [current];
-    return acc;
-}, {});
+// const types = [{ type: "fruit" }, { type: "veg" }, { type: "fruit" }];
+// const groups = types.reduce((acc, current) => {
+//     if (current.type in acc)
+//         acc[current.type].push(current);
+//     else
+//         acc[current.type] = [current];
+//     return acc;
+// }, {});
 // console.log(groups);
+
+// 39
+
+const arr = [2, 5, 9, ];
+const hasDoubles = (arr) => {
+    for (const i in arr) {
+        if (arr.includes(arr[i], i + 1))
+            return true;
+    }
+    return false;
+};
+// console.log(hasDoubles(arr));
