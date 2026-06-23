@@ -24,3 +24,8 @@
 // const sum = ages.reduce((acc, current) => acc + current);
 // const average = sum / ages.length;
 // console.log(average);
+
+// 25
+// const numbers = [8, -6, 16, -2, 0];
+// const sortedNumbers = numbers.sort((left, right) => right - left);
+// console.log(sortedNumbers);
