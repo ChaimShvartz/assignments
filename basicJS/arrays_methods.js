@@ -1,0 +1,26 @@
+// 2
+// const strings = ["hello", "world"];
+// const upper = strings.map(str => str.toUpperCase());
+// console.log(upper);
+
+// 4
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const evens = numbers.filter(num => !(num % 2));
+// console.log(evens);
+
+// 8
+// const prices = [1, 200, 3, 400, 55, 60]
+// const filteredPrices = prices.filter(price => price > 100);
+// const updatePrices = filteredPrices.map(price => price * 1.1);
+// console.log(updatePrices);
+
+// 10
+// const numbers = [1, 2, 3, 4, 5, 6]
+// const multiplication = numbers.reduce((acc, current) => acc * current);
+// console.log(multiplication);
+
+// 12
+// const ages = [10, 2, 3];
+// const sum = ages.reduce((acc, current) => acc + current);
+// const average = sum / ages.length;
+// console.log(average);
