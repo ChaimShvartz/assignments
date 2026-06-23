@@ -36,3 +36,7 @@
 // console.log(arr);
 
 // 32
+// const matrics = [[5, [2]], [9, 0]];
+// const arr = matrics.flat(2);
+// console.log(arr);
+
