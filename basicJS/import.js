@@ -69,7 +69,7 @@
 // import user from "./export.js";
 // console.log(user.age);
 
-// 8
+// 9
 // import subNumbers, {add} from "./export.js";
 // console.log(add(5, 1));
 // console.log(subNumbers(5, 1));
