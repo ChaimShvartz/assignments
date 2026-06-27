@@ -45,3 +45,24 @@ export function getAccountType() {
         throw new Error("invalid account type");
     return accountType;
 }
+
+export function countCustomers() {
+    return manager.getCustomers().length;
+}
+
+export function countActiveAccounts() {
+    return manager.getCustomers().filter((customer) => customer.isActive).length;
+}
+
+export function countTotalMoney() {
+    return manager.getCustomers().reduce(((acc, next) => acc + next.balance), 0);
+}
+
+export function getHighestBalance() {
+    let maxBalance = 0;
+    for (const customer of manager.getCustomers()) {
+        if (customer.balance > maxBalance)
+            maxBalance = customer.balance;
+    }
+    return maxBalance;
+}

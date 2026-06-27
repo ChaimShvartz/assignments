@@ -34,8 +34,7 @@ export function getCustomersManager() {
                 console.log("There are not customers yet");
                 return;
             }
-            // for (const customer of customers)
-                console.log(customers);
+            console.log(customers);
         },
         searchCustomerByID: function (id) {
             return customers.find((customer) => customer.id === id);
@@ -45,5 +44,6 @@ export function getCustomersManager() {
                 (customer) => customer.fullName.toLowerCase() === name,
             );
         },
+        getCustomers: () => customers,
     };
 }
