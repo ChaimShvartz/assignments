@@ -22,17 +22,3 @@ export function getString(field = "name") {
     if (userInput === "") throw new Error("Missed " + field);
     return userInput;
 }
-
-export function getAccountType() {
-    const accountType = getString("account type").toLowerCase();
-    if (!["regular", "premium", "student", "r"].includes(accountType))
-        throw new Error("invalid account type");
-    return accountType;
-}
-
-export function getCustomer() {
-    const id = getNumber("ID");
-    const customer = manager.searchCustomerByID(id);
-    if (!customer) throw new Error("Customer not found");
-    return customer;
-}

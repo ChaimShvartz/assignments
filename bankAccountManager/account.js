@@ -1,6 +1,7 @@
 import input from "analiza-sync";
 import { manager } from "./main.js";
-import { getNumber, getString, getCustomer } from "./utils.js";
+import { getNumber, getString } from "./utils.js";
+import { getCustomer } from "./customer.js";
 
 export function deposit() {
     try {

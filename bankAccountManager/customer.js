@@ -1,6 +1,6 @@
 import input from "analiza-sync";
 import { manager } from "./main.js";
-import { getNumber, getString, getAccountType } from "./utils.js";
+import { getNumber, getString } from "./utils.js";
 
 export function createCustomer() {
     try {
@@ -30,4 +30,18 @@ export function searchCustomer() {
         customer = manager.searchCustomerByName(customerKey.toLowerCase());
     else customer = manager.searchCustomerByID(Number(customerKey));
     console.log(customer || "Customer not found");
+}
+
+export function getCustomer() {
+    const id = getNumber("ID");
+    const customer = manager.searchCustomerByID(id);
+    if (!customer) throw new Error("Customer not found");
+    return customer;
+}
+
+export function getAccountType() {
+    const accountType = getString("account type").toLowerCase();
+    if (!["regular", "premium", "student", "r"].includes(accountType))
+        throw new Error("invalid account type");
+    return accountType;
 }
